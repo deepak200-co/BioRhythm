@@ -77,23 +77,36 @@ const Login = () => {
 
   return (
     <>
-      <div className="Login-container">
-        <div ref={formContainerRef} class="form-container box">
-          <div className="form-box">
-            <form onSubmit={handleSubmit}>
-              <input type="email"
-                className="email"
-                placeholder="email address"
+    <div className="logcir"></div>
+      <div className="loginpage">
+        <img
+          className="logipic"
+          src="https://raw.githubusercontent.com/trananhtuat/animated-login-registration/353a7bb31a0e21f6344af06868805656476d26d3/assets/undraw_creative_team_r90h.svg"
+          alt=""
+        />
+        <div className="login">
+          <div className="drop">
+            <form className="loginForm" onSubmit={handleSubmit}>
+              <span className="loginTitle">LOGIN</span>
+              <label className="ht">Email</label>
+              <input
+                className="loginInput"
+                type="text"
+                placeholder="Enter your email..."
+                value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                name="email"
               />
-              <input type="password"
-                className="password"
-                placeholder="password"
+              <label className="ht">Password</label>
+              <input
+                className="loginInput"
+                type="password"
+                placeholder="Enter your password..."
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                name="password"
               />
-              <div className="btn-login">
-                <button type="submit" className="btn" onClick={() => signInWithEmailAndPassword(email, password)}>Login</button>
-              </div>
+              <button type="submit" className="loginButton" onClick={() => signInWithEmailAndPassword(email, password)}>Login</button>
             </form>
             <hr />
             <div className="google-btn">
@@ -104,9 +117,10 @@ const Login = () => {
               />
 
             </div>
-            <div className='sign-login'>
-              Don't have an account?
-              <span onClick={handleGoToSignup} style={{
+          </div >
+          <div className='loginRegisterButton' onClick={handleGoToSignup}>
+          Don't have an account?
+              <span  style={{
                 textDecoration: 'none',
                 color: 'white',
                 fontWeight: '600',
@@ -115,14 +129,10 @@ const Login = () => {
               }}>
                 Signup
               </span>
-            </div>
-          </div>
-
+              </div>
         </div>
-
       </div>
     </>
-
   );
 };
 
