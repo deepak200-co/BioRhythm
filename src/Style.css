@@ -1,0 +1,133 @@
+/* .relative{
+  width: 100%;
+  height: 100vh;
+} 
+
+.chart-container{
+  position: relative;
+  margin-top: 100px;
+}
+
+ 
+.relative form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 12px 20px;
+    backface-visibility: visible;
+    backdrop-filter:initial;
+    top: -400px;
+  }
+
+  .relative form label{
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+  }
+  .relative form input{
+    border-radius: 25px;
+  }
+  .relative  form button{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20%;
+    background: none;
+  }
+  .relative form button:hover{
+    background-color:cornflowerblue;
+    color: white;
+    cursor: pointer;
+  }
+
+  .main{
+    width: 100%;
+    position: relative;
+    top:-500px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+video{
+  width: 100%;
+  opacity: 0.5;
+}
+
+
+ */
+
+ /* Base styles */
+.relative {
+  width: 100%;
+  height: 100vh;
+}
+
+.chart-container {
+  position: relative;
+  margin-top: 100px;
+}
+
+.relative form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 12px 20px;
+  backface-visibility: visible;
+  backdrop-filter: initial;
+  top: -400px;
+}
+
+.relative form label {
+  color: black;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.relative form input {
+  border-radius: 25px;
+}
+
+.relative form button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 20%;
+  background: none;
+}
+
+.relative form button:hover {
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  position: relative;
+  top: -500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+video {
+  width: 100%;
+  opacity: 0.5;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .relative form {
+    top: 0;
+    padding: 12px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .main {
+    top: -200px; /* Adjust the position for smaller screens */
+  }
+}

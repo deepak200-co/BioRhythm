@@ -1,0 +1,61 @@
+.text-boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 30px;
+    color: black;
+  }
+  
+  .text-box{
+    padding: 10px;
+    border: 2px solid #61dafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .text-box:hover{
+    background-color: aqua;
+    color: white;
+    cursor: text;
+  }
+
+  .inter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Main-para{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  } 
+
+
+  .Para {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px;
+    margin-top: 30px;
+    background: black;
+    color: aliceblue;
+  }
+  
+  .ParaBox {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 10px;
+  }
+  
+  .ParaBox:hover {
+    cursor: text;
+  }
+  

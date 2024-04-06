@@ -1,0 +1,77 @@
+.Login-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #343790 , #1BFFFF);
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: linear-gradient(to right, #1BFFFF, #343790);
+    color: #333;
+
+
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    height: 40px;
+}
+
+.email,
+.password,
+.display-name {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-login {
+    text-align: center;
+}
+.btn {
+    width: 70%;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 0;
+    font-size: 16px; 
+    font-weight: 600;
+    border: 2px solid white; 
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.8s ease;
+  }
+  
+  .btn:hover {
+    background-color: #090979;
+    border-color: #090979; 
+}
+
+.errorMessage {
+    color: red;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.sign-login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 688px) {
+    .form-container {
+        width: 80%;
+    }
+}
